@@ -1,0 +1,216 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kaltura Embeds Comparison</title>
+  <meta name="viewport" content="width=620, initial-scale=1">
+  <style>
+    body {
+      background: #181c24;
+      color: #e7e7e7;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      padding: 24px 0 80px 0;
+    }
+    h1 {
+      text-align: center;
+      color: #ffe066;
+      margin-bottom: 38px;
+      letter-spacing: 1.5px;
+    }
+    .embed-section {
+      max-width: 1250px;
+      margin: 0 auto 36px auto;
+      background: #232837;
+      border-radius: 16px;
+      box-shadow: 0 4px 18px #0e111b42;
+      padding: 0 0 18px 0;
+    }
+    .embed-section-title {
+      font-size: 1.23rem;
+      font-weight: 700;
+      background: #252c3a;
+      border-radius: 16px 16px 0 0;
+      padding: 14px 32px;
+      margin-bottom: 0;
+      border-bottom: 1px solid #23272f;
+      letter-spacing: 1px;
+    }
+    .embed-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      padding: 0;
+    }
+    .embed-col {
+      flex: 1 1 0;
+      min-width: 320px;
+      padding: 24px 12px 12px 12px;
+      text-align: center;
+      border-right: 1px solid #212533;
+      background: #232837;
+    }
+    .embed-col:last-child {
+      border-right: none;
+    }
+    .embed-col-label {
+      font-weight: 600;
+      color: #62d8fe;
+      margin-bottom: 14px;
+      letter-spacing: 0.5px;
+      font-size: 1.08rem;
+    }
+    .embed-single {
+      display: flex;
+      justify-content: center;
+      padding: 24px 0 12px 0;
+    }
+    @media (max-width: 1050px) {
+      .embed-row {
+        flex-direction: column;
+      }
+      .embed-col {
+        border-right: none;
+        border-bottom: 1px solid #222533;
+      }
+      .embed-col:last-child {
+        border-bottom: none;
+      }
+    }
+  </style>
+</head>
+<body>
+<h1>Kaltura V2 / V7 Embed Comparison</h1>
+
+  <!-- Dynamic Embed -->
+  <div class="embed-section">
+    <div class="embed-section-title">Dynamic Embed</div>
+    <div class="embed-row">
+      <div class="embed-col">
+        <div class="embed-col-label">V7</div>
+        <div id="kaltura_player_540152016" style="width: 560px;height: 395px"></div>
+                    <script type="text/javascript" src="https://api.nvq2.ovp.kaltura.com/p/23692/embedPlaykitJs/uiconf_id/24281292"></script>
+                    <script type="text/javascript">
+                    try {
+                      var kalturaPlayer = KalturaPlayer.setup({
+                        targetId: "kaltura_player_540152016",
+                        provider: {
+                          partnerId: 23692,
+                          uiConfId: 24281292
+                        }
+                      });
+                      kalturaPlayer.loadMedia({entryId: '0_0m53595f'});
+                    } catch (e) {
+                      console.error(e.message)
+                    }
+                  </script>
+      </div>
+      <div class="embed-col">
+        <div class="embed-col-label">V2</div>
+        <script src="https://api.nvq2.ovp.kaltura.com/p/23692/sp/2369200/embedIframeJs/uiconf_id/24281282/partner_id/23692"></script>
+<div id="kaltura_player_1751983186" style="width: 560px; height: 395px;"></div>
+<script>
+kWidget.embed({
+  "targetId": "kaltura_player_1751983186",
+  "wid": "_23692",
+  "uiconf_id": 24281282,
+  "flashvars": {},
+  "cache_st": 1751983186,
+  "entry_id": "0_0m53595f"
+});
+</script>
+    </div>
+  </div>
+
+<!-- IFrame Embed -->
+  <div class="embed-section">
+    <div class="embed-section-title">IFrame Embed</div>
+    <div class="embed-row">
+      <div class="embed-col">
+        <div class="embed-col-label">V7</div>
+        <iframe type="text/javascript" src='https://api.nvq2.ovp.kaltura.com/p/23692/embedPlaykitJs/uiconf_id/24281292?iframeembed=true&entry_id=0_0m53595f' style="width: 560px; height: 395px" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="V2V7"></iframe>
+      </div>
+      <div class="embed-col">
+        <div class="embed-col-label">V2</div>
+        <iframe id="kaltura_player_1751983227" src="https://api.nvq2.ovp.kaltura.com/p/23692/sp/2369200/embedIframeJs/uiconf_id/24281282/partner_id/23692?iframeembed=true&playerId=kaltura_player_1751983227&entry_id=0_0m53595f" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="V2V7"></iframe>
+      </div>
+    </div>
+  </div>
+
+<!-- Auto Embed -->
+  <div class="embed-section">
+    <div class="embed-section-title">Auto Embed</div>
+    <div class="embed-row">
+      <div class="embed-col">
+        <div class="embed-col-label">V7</div>
+        <div id="kaltura_player_913495881" style="width: 560px;height: 395px"></div>
+<script type="text/javascript" src='https://api.nvq2.ovp.kaltura.com/p/23692/embedPlaykitJs/uiconf_id/24281292?autoembed=true&targetId=kaltura_player_913495881&entry_id=0_0m53595f'></script>
+      </div>
+      <div class="embed-col">
+        <div class="embed-col-label">V2</div>
+        <script src="https://api.nvq2.ovp.kaltura.com/p/23692/sp/23692100/embedIframeJs/uiconf_id/24281282/partner_id/23692?autoembed=true&entry_id=0_0m53595f&playerId=kaltura_player_1751983301&cache_st=1751983301&width=560&height=395"></script>
+      </div>
+    </div>
+  </div>
+
+  <!-- Thumbnail Embed -->
+  <div class="embed-section">
+    <div class="embed-section-title">Thumbnail Embed</div>
+    <div class="embed-row">
+      <div class="embed-col">
+        <div class="embed-col-label">V7</div>
+        <div id="kaltura_player_43914525" style="width: 560px;height: 395px"></div>
+                    <script type="text/javascript" src="https://api.nvq2.ovp.kaltura.com/p/23692/embedPlaykitJs/uiconf_id/24281292"></script>
+                    <script src="https://static.kaltura.com/content/static/player-scripts/thumbnail-embed.js"></script>
+                    <script type="text/javascript">
+                    try {
+                      __thumbnailEmbed({
+                        config:  {
+                            provider: {
+                              partnerId: 23692,
+                              uiConfId: 24281292
+                            },
+                            targetId: "kaltura_player_43914525"
+                        },
+                        mediaInfo: {entryId: '0_0m53595f'}
+                      });
+                    } catch (e) {
+                      console.error(e.message)
+                    }
+                  </script>
+      </div>
+      <div class="embed-col">
+        <div class="embed-col-label">V2</div>
+        <script src="https://api.nvq2.ovp.kaltura.com/p/23692/sp/2369200/embedIframeJs/uiconf_id/24281282/partner_id/23692"></script>
+<div id="kaltura_player_1751983340" style="width: 560px; height: 395px;"></div>
+<script>
+kWidget.thumbEmbed({
+  "targetId": "kaltura_player_1751983340",
+  "wid": "_23692",
+  "uiconf_id": 24281282,
+  "flashvars": {},
+  "cache_st": 1751983340,
+  "entry_id": "0_0m53595f"
+});
+</script>
+      </div>
+    </div>
+  </div>
+
+
+<!-- V2V7 IFrame (single wide row) -->
+  <div class="embed-section">
+    <div class="embed-section-title">V2V7 IFrame</div>
+    <div class="embed-single">
+      <iframe id="kaltura_player_1751983416" src="https://api.nvq2.ovp.kaltura.com/p/23692/sp/2369200/embedIframeJs/uiconf_id/24281302/partner_id/23692?iframeembed=true&playerId=kaltura_player_1751983416&entry_id=0_0m53595f" width="560" height="395" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="V2V7"></iframe>
+    </div>
+  </div>
+
+  <!-- V2V7 Auto (single wide row) -->
+  <div class="embed-section">
+    <div class="embed-section-title">V2V7 Auto</div>
+    <div class="embed-single">
+      <script src="https://api.nvq2.ovp.kaltura.com/p/23692/sp/23692100/embedIframeJs/uiconf_id/24281302/partner_id/23692?autoembed=true&entry_id=0_0m53595f&playerId=kaltura_player_1751983442&cache_st=1751983442&width=560&height=395"></script>
+    </div>
+  </div>
+</body>
+</html>
