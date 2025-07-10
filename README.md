@@ -1,4 +1,4 @@
-** Embeds test pages:
+## Embeds test pages:
 
 - NVQ2 Test Page: https://kaltura.github.io/playkit-js-test-pages/src/nvq2/test-embed-pages.html
 
